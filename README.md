@@ -10,16 +10,42 @@ Este projeto de Engenharia de Dados tem como objetivo assegurar a qualidade e a 
 - Testes automatizados com pytest
 - Documentação com MkDocs
 
-## 📋 Prerequisites
+## 🏗️ Estrutura do Projeto
+
+```
+workshop-data_quality/
+├── app/            # Application source code
+├── docs/           # Documentation files
+├── sql/            # SQL scripts and queries
+├── test/           # Test files
+├── pyproject.toml  # Project configuration and dependencies
+└── README.md       
+```
+
+![alt text](pic/fluxo_atividades.png)
+
+## 📚 Documentação
+
+A documentação do projeto é gerada utilizando MkDocs e pode ser acessada ao executar o seguinte comando:
+```bash
+poetry run task doc
+```
+
+Isso iniciará um servidor local em http://localhost:8000, onde você poderá visualizar a documentação. Como no exemplo abaixo:
+
+![alt text](pic/doc.png)
+
+
+## 📋 Pré-requisitos
 
 - Python 3.11 or higher
 - Poetry for dependency management
 
-## 🛠️ Installation
+## 🛠️ Instalação
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone git@github.com:idfelipemalatesta/workshop-data_quality.git
 cd workshop-data_quality
 ```
 
@@ -33,37 +59,20 @@ poetry install
 poetry shell
 ```
 
-## 🏗️ Project Structure
 
-```
-workshop-data_quality/
-├── app/            # Application source code
-├── docs/           # Documentation files
-├── sql/            # SQL scripts and queries
-├── test/           # Test files
-├── pyproject.toml  # Project configuration and dependencies
-└── README.md       
-```
 
 ## 🚀 Usage
 
-- Run tests:
+- Run ETL:
 ```bash
 poetry run python app/etl.py
 ```
 
-## 📚 Documentation
 
-The project documentation is built using MkDocs and can be accessed by running:
-```bash
-poetry run task doc
-```
 
-This will start a local server at `http://localhost:8000` where you can view the documentation.
+## 🧪 Testes
 
-## 🧪 Testing
-
-Run the test suite using:
+Execute o conjunto de testes:
 ```bash
 poetry run task test
 ```
