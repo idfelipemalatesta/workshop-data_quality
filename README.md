@@ -14,11 +14,11 @@ Este projeto de Engenharia de Dados tem como objetivo assegurar a qualidade e a 
 
 ```
 workshop-data_quality/
-├── app/            # Application source code
-├── docs/           # Documentation files
-├── sql/            # SQL scripts and queries
-├── test/           # Test files
-├── pyproject.toml  # Project configuration and dependencies
+├── app/            # Código-fonte da aplicação 
+├── docs/           # Arquivo de documentação 
+├── sql/            # SQL scripts e queries
+├── test/           # Arquivo de teste unitário
+├── pyproject.toml  # Configuração do projeto e dependências
 └── README.md       
 ```
 
